@@ -15,6 +15,10 @@
 		05659E921CCBBC8600F8EB08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05659E901CCBBC8600F8EB08 /* LaunchScreen.storyboard */; };
 		05659E9D1CCBBC8600F8EB08 /* videoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05659E9C1CCBBC8600F8EB08 /* videoTestTests.m */; };
 		05659EA81CCBBC8600F8EB08 /* videoTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05659EA71CCBBC8600F8EB08 /* videoTestUITests.m */; };
+		05659EB61CCBBCA900F8EB08 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05659EB51CCBBCA900F8EB08 /* MediaPlayer.framework */; };
+		05D1458F1CFA09010030D2E2 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 05D1458D1CFA08450030D2E2 /* 1.mp4 */; };
+		05D145931CFA0FF90030D2E2 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D145921CFA0FF90030D2E2 /* UIView+Extension.m */; };
+		128E8A2006F33D2F7AB5A4D9 /* libPods-videoTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6584094F99FE3E9D6D98EC /* libPods-videoTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,16 @@
 		05659EA31CCBBC8600F8EB08 /* videoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05659EA71CCBBC8600F8EB08 /* videoTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = videoTestUITests.m; sourceTree = "<group>"; };
 		05659EA91CCBBC8600F8EB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05659EB51CCBBCA900F8EB08 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		05659EB71CCBBCFB00F8EB08 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		056C5A611CFA114500586827 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		056C5A621CFA11A700586827 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		05D1458D1CFA08450030D2E2 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		05D145911CFA0FF90030D2E2 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		05D145921CFA0FF90030D2E2 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		6A337984C608C53B524B9394 /* Pods-videoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-videoTest/Pods-videoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8649FA7E7EF68D6227FCB73F /* Pods-videoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-videoTest/Pods-videoTest.release.xcconfig"; sourceTree = "<group>"; };
+		BA6584094F99FE3E9D6D98EC /* libPods-videoTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-videoTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05659EB61CCBBCA900F8EB08 /* MediaPlayer.framework in Frameworks */,
+				128E8A2006F33D2F7AB5A4D9 /* libPods-videoTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +97,13 @@
 		05659E761CCBBC8600F8EB08 = {
 			isa = PBXGroup;
 			children = (
+				05659EB51CCBBCA900F8EB08 /* MediaPlayer.framework */,
 				05659E811CCBBC8600F8EB08 /* videoTest */,
 				05659E9B1CCBBC8600F8EB08 /* videoTestTests */,
 				05659EA61CCBBC8600F8EB08 /* videoTestUITests */,
 				05659E801CCBBC8600F8EB08 /* Products */,
+				EA8A809DD500B414153A9643 /* Pods */,
+				975189DE7FA5BB49E3943397 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +120,12 @@
 		05659E811CCBBC8600F8EB08 /* videoTest */ = {
 			isa = PBXGroup;
 			children = (
+				056C5A621CFA11A700586827 /* Header.h */,
+				056C5A611CFA114500586827 /* PrefixHeader.pch */,
+				05D145911CFA0FF90030D2E2 /* UIView+Extension.h */,
+				05D145921CFA0FF90030D2E2 /* UIView+Extension.m */,
+				05D1458D1CFA08450030D2E2 /* 1.mp4 */,
+				05659EB71CCBBCFB00F8EB08 /* video.mp4 */,
 				05659E851CCBBC8600F8EB08 /* AppDelegate.h */,
 				05659E861CCBBC8600F8EB08 /* AppDelegate.m */,
 				05659E881CCBBC8600F8EB08 /* ViewController.h */,
@@ -140,6 +165,23 @@
 			path = videoTestUITests;
 			sourceTree = "<group>";
 		};
+		975189DE7FA5BB49E3943397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA6584094F99FE3E9D6D98EC /* libPods-videoTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA8A809DD500B414153A9643 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A337984C608C53B524B9394 /* Pods-videoTest.debug.xcconfig */,
+				8649FA7E7EF68D6227FCB73F /* Pods-videoTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05659EAC1CCBBC8600F8EB08 /* Build configuration list for PBXNativeTarget "videoTest" */;
 			buildPhases = (
+				C037F4763A051FEF21082A74 /* 📦 Check Pods Manifest.lock */,
 				05659E7B1CCBBC8600F8EB08 /* Sources */,
 				05659E7C1CCBBC8600F8EB08 /* Frameworks */,
 				05659E7D1CCBBC8600F8EB08 /* Resources */,
+				6DC0395A744377AFB6DDC928 /* 📦 Embed Pods Frameworks */,
+				C881CF92BF387A10A86627A5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D1458F1CFA09010030D2E2 /* 1.mp4 in Resources */,
 				05659E921CCBBC8600F8EB08 /* LaunchScreen.storyboard in Resources */,
 				05659E8F1CCBBC8600F8EB08 /* Assets.xcassets in Resources */,
 				05659E8D1CCBBC8600F8EB08 /* Main.storyboard in Resources */,
@@ -265,6 +311,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DC0395A744377AFB6DDC928 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-videoTest/Pods-videoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C037F4763A051FEF21082A74 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C881CF92BF387A10A86627A5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-videoTest/Pods-videoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05659E7B1CCBBC8600F8EB08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +366,7 @@
 			files = (
 				05659E8A1CCBBC8600F8EB08 /* ViewController.m in Sources */,
 				05659E871CCBBC8600F8EB08 /* AppDelegate.m in Sources */,
+				05D145931CFA0FF90030D2E2 /* UIView+Extension.m in Sources */,
 				05659E841CCBBC8600F8EB08 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,8 +508,10 @@
 		};
 		05659EAD1CCBBC8600F8EB08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A337984C608C53B524B9394 /* Pods-videoTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = videoTest/PrefixHeader.pch;
 				INFOPLIST_FILE = videoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = come.lyq.videoTest;
@@ -424,8 +521,10 @@
 		};
 		05659EAE1CCBBC8600F8EB08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8649FA7E7EF68D6227FCB73F /* Pods-videoTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = videoTest/PrefixHeader.pch;
 				INFOPLIST_FILE = videoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = come.lyq.videoTest;
@@ -498,6 +597,7 @@
 				05659EAE1CCBBC8600F8EB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05659EAF1CCBBC8600F8EB08 /* Build configuration list for PBXNativeTarget "videoTestTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +606,7 @@
 				05659EB11CCBBC8600F8EB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05659EB21CCBBC8600F8EB08 /* Build configuration list for PBXNativeTarget "videoTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +615,7 @@
 				05659EB41CCBBC8600F8EB08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

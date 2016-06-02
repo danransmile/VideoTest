@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  videoTest
+//
+//  Created by 刘艳芹 on 16/5/29.
+//  Copyright © 2016年 com.lyq. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "Header.h"
+#import <Masonry.h>
+#import <BlocksKit.h>
+#import <BlocksKit+MessageUI.h>
+#import <BlocksKit+UIKit.h>
+#endif /* PrefixHeader_pch */
